@@ -1,0 +1,15 @@
+    <fieldset class="fieldset create account" data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>">
+        <div class="field mobile required">
+            <label for="telephone" class="label"><span><?php /* @escapeNotVerified */ echo __('Phone Number') ?></span></label>
+            <div class="control">
+                <input type="text" name="telephone" id="telephone" title="<?php /* @escapeNotVerified */ echo __('Phone Number') ?>" class="input-text" data-validate="{required:true}" autocomplete="off">
+                <span><?php /* @escapeNotVerified */ echo __('Example:(+1*********)') ?></span>
+            </div>
+        </div>
+         <div class="field mobile required">
+            <label for="repeat_telephone" class="label"><span><?php /* @escapeNotVerified */ echo __('Repeat Phone') ?></span></label>
+            <div class="control">
+                <input type="text" name="repeat_telephone" id="repeat_telephone" title="<?php /* @escapeNotVerified */ echo __('Repeat Phone') ?>" class="input-text" data-validate="{required:true, equalTo:'#telephone'}" autocomplete="off">
+            </div>
+        </div>
+    </fieldset>
